@@ -7,6 +7,7 @@ var removeStopWords = require('./remove-stop-words')({bannedWords: ["kitten", "p
 var app = express();
 
 app.get('/filter', function(req, res) {
+    console.log('call filter');
     removeStopWords(req.query.text, function(error, response){
       res.send(response);
     });
