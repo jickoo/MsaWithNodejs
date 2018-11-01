@@ -1,5 +1,5 @@
 var mandrill = require("mandrill-api/mandrill");
-var mandrillClient = new mandrill.Mandrill("6eab3cbc877a68e6287b84b103a40018-us19");
+var mandrillClient = new mandrill.Mandrill("<MY-API>");
 
 mandrillClient.users.info({}, function(result){
     console.log(result);
