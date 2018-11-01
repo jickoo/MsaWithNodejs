@@ -1,0 +1,16 @@
+{
+  "name": "mongo-store",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "seneca": "^3.7.0",
+    "seneca-entity": "^2.3.0",
+    "seneca-mongo-store": "^1.4.0"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "emailing",
+  "version": "1.0.0",
+  "description": "Emailing sub-system",
+  "main": "index.js",
+  "keywords": [
+    "microservices",
+    "products"
+  ],
+  "scripts": {
+    "start": "node ./app/index.js"
+  },
+  "author": "David Gonzalez",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "debug": "^2.2.0",
+    "express": "^4.16.4",
+    "seneca": "^3.7.0",
+    "seneca-entity": "^2.3.0",
+    "seneca-mongo-store": "^1.4.0",
+    "seneca-web": "^2.2.1",
+    "seneca-web-adapter-express": "^1.1.2",
+    "type-is": "^1.6.10"
+  }
+}
