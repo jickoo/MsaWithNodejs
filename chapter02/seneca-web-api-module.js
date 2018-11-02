@@ -8,6 +8,7 @@ module.exports = function api(options) {
 
 
     this.add('init:api', function (msg, respond) {
+        console.log("!!!!!!!! init");
         this.act('role:web', {
             routes: {
                 prefix: '/my-api',
