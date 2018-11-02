@@ -1,6 +1,4 @@
 
-
-
 const SenecaWeb = require('seneca-web')
 const Express = require('express')
 const Router = Express.Router
@@ -15,14 +13,9 @@ const senecaWebConfig = {
 const app = Express()
     .use( require('body-parser').json() )
     .use( context )
-    .listen(3000)
+    .listen(3001)
 
-var seneca = require('seneca')()
-    .use(SenecaWeb, senecaWebConfig)
-    .use('product-module')
-    .use('entity')
-    .use('mongo-store', {
-        uri: 'mongodb://127.0.0.1:27017/seneca'
-    })
-    //.client( { type:'tcp', pin:'role:web' } );
-    .listen( { type:'tcp', pin:'role:web', timeout:10000 } );
+const seneca = require('seneca')()
+    .use(SenecaWeb, senecaWebConfig )
+    .use('emailer-module')
+    .client( { type:'tcp', pin:'role:web' } )

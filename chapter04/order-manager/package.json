@@ -4,6 +4,7 @@
   "description": "Emailing sub-system",
   "main": "index.js",
   "scripts": {
+    "start": "node ./app/ex-index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +22,14 @@
   },
   "homepage": "https://github.com/dgonzalez/chapter4",
   "dependencies": {
-    "seneca": "^0.8.0"
+    "body-parser": "^1.14.1",
+    "debug": "^2.2.0",
+    "express": "^4.16.4",
+    "seneca": "^3.7.0",
+    "seneca-entity": "^2.3.0",
+    "seneca-mongo-store": "^1.4.0",
+    "seneca-web": "^2.2.1",
+    "seneca-web-adapter-express": "^1.1.2",
+    "type-is": "^1.6.10"
   }
 }

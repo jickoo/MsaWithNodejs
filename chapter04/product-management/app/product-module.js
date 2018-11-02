@@ -4,7 +4,8 @@ module.exports = function product(options) {
     /**
      * Fetch the list of all the products.
      */
-    this.add({area: "product", action: "fetch"}, function (args, done) {
+    this.add('area:product,action:fetch', function (args, done) {
+        console.log('product fetch');
         var products = this.make("products");
         products.list$({}, done);
     });

@@ -24,6 +24,7 @@
     "body-parser": "^1.14.2",
     "express": "^4.16.4",
     "seneca": "^3.7.0",
+    "seneca-client": "0.0.8",
     "seneca-web": "^2.2.1",
     "seneca-web-adapter-express": "^1.1.2"
   }
