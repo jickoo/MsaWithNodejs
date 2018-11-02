@@ -20,3 +20,8 @@ const seneca = require('seneca')()
     .use(SenecaWeb, senecaWebConfig )
     .use('seneca-web-api-module')
     .client( { type:'tcp', pin:'role:web' } )
+
+// pm2 start ex-seneca-web.js
+// pm2 list
+// pm2 monitor 0
+// https://app.pm2.io/#/r/f8btwvi33phhni6

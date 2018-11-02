@@ -2,8 +2,8 @@ module.exports = function api(options) {
 
     var valid_ops = {sum: 'sum', product: 'product'}
 
-    this.add('role:api,cmd:bazinga', function (msg, respond) {
-        respond(null,{bar:"Bazinga!"});
+    this.add('role:api,cmd:index', function (msg, respond) {
+        respond(null,{message:'"Hello, World!"'});
     })
 
 
@@ -13,7 +13,7 @@ module.exports = function api(options) {
                 prefix: '/my-api',
                 pin: 'role:api,cmd:*',
                 map:{
-                    bazinga: {GET: true}
+                    index: {GET: true}
                 }
             }
         }, respond)
